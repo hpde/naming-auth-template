@@ -31,7 +31,7 @@ jobs:
           subject: ${{ steps.date.outputs.date }} ${{ github.repository }} push
           # email body as text
           body: |
-            ahooga
+            repo: $${{ github.repository }}
           # comma-separated string, send email to
           to: charles.f.dolan@nasa.gov
           # from email name
