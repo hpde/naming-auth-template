@@ -1,16 +1,16 @@
 name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
+on: [create]
 jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+#  check-bats-version:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: '14'
+#      - run: npm install -g bats
+#      - run: bats -v
 
   notify:
     name: Notify that a push has occurred
@@ -31,7 +31,7 @@ jobs:
           subject: ${{ steps.date.outputs.date }} ${{ github.repository }} push
           # email body as text
           body: |
-            repo: $${{ github.repository }}
+            repo: ${{ github.repository }}
           # comma-separated string, send email to
           to: charles.f.dolan@nasa.gov
           # from email name
