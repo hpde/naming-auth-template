@@ -22,6 +22,7 @@ jobs:
           # email body as text
           body: |
             repo: ${{ github.repository }}
+            action triggered bby: ${{ env.GITHUB_ACTOR }}
           # comma-separated string, send email to
           to: charles.f.dolan@nasa.gov
           # from email name
