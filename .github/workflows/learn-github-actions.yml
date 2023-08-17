@@ -23,6 +23,8 @@ jobs:
           body: |
             repo: ${{ github.repository }}
             action triggered by: ${{ github.actor }}
+            event: ${{github.event_name}}
+            commit message: ${{github.event.head_commit.message}}
           # comma-separated string, send email to
           to: charles.f.dolan@nasa.gov
           # from email name
