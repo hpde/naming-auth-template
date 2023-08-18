@@ -3,5 +3,5 @@ run-name: ${{ github.actor }} - reusing notify
 on: push
 jobs:
   reusable-notify:
-uses: ihdp/test-workflow/.github/workflows/validate-push.yml@master
-secrets: inherit
+    uses: ihdp/test-workflow/.github/workflows/validate-push.yml@master
+    secrets: inherit
