@@ -1,5 +1,5 @@
 name: call-reusable-notify
-run-name: ${{ github.actor }}: reusing notify
+run-name: ${{ github.actor }} - reusing notify
 on: push
 jobs:
   reusable-notify:
