@@ -2,6 +2,6 @@ name: call-validate-push
 run-name: ${{ github.actor }} - calling centralized validate-push
 on: push
 jobs:
-  reusable-notify:
+  reusable-validate-push:
     uses: hpde/spase-workflows/.github/workflows/validate-push.yml@master
     secrets: inherit
