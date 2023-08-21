@@ -2,6 +2,6 @@ name: call-validate
 run-name: ${{ github.actor }} - calling centralized manual validation
 on: workflow_dispatch
 jobs:
-  reusable-notify:
+  reusable-validate:
     uses: hpde/spase-workflows/.github/workflows/validate.yml@master
     secrets: inherit
