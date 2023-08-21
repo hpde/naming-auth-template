@@ -5,5 +5,5 @@ on:
     - cron: '0 0 1 * *'
 jobs:
   reusable-notify:
-    uses: hpde/test-workflow/.github/workflows/delete-runs-schedule.yml@master
+    uses: hpde/spase-workflows/.github/workflows/delete-runs-schedule.yml@master
     secrets: inherit
