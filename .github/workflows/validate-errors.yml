@@ -1,0 +1,7 @@
+name: call-validate-errors
+run-name: ${{ github.actor }} - calling centralized error validate on push
+on: push
+jobs:
+  reusable-notify:
+    uses: hpde/spase-workflows/.github/workflows/validate-error.yml@master
+    secrets: inherit
