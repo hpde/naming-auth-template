@@ -2,6 +2,6 @@ name: call-notify-repo-created
 run-name: ${{ github.actor }} - calling centralized creation notification
 on: create
 jobs:
-  reusable-notify:
+  reusable-repo-created:
     uses: hpde/spase-workflows/.github/workflows/notify-repo-created.yml@master
     secrets: inherit
