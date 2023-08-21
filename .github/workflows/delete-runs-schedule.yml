@@ -1,5 +1,6 @@
 name: call-delete-runs-schedule
 run-name: ${{ github.actor }} - calling centralized scheduled deletion
+on:
   schedule:
     - cron: '0 0 1 * *'
 jobs:
