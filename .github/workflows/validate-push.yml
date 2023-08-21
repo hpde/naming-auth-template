@@ -3,5 +3,5 @@ run-name: ${{ github.actor }} - calling centralized validate-push
 on: push
 jobs:
   reusable-notify:
-    uses: hpde/test-workflow/.github/workflows/validate-push.yml@master
+    uses: hpde/spase-workflows/.github/workflows/validate-push.yml@master
     secrets: inherit
