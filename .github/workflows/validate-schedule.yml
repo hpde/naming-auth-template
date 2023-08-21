@@ -1,0 +1,9 @@
+name: call-validate-schedule
+run-name: ${{ github.actor }} - calling centralized monthly validation 
+on: 
+  schedule:
+    - cron: "0 0 1 * *"
+jobs:
+  reusable-validate-schedule:
+    uses: hpde/spase-workflows/.github/workflows/validate-schedule.yml@master
+    secrets: inherit
