@@ -3,5 +3,5 @@ run-name: ${{ github.actor }} - calling centralized creation notification
 on: create
 jobs:
   reusable-notify:
-    uses: hpde/test-workflow/.github/workflows/notify-repo-created.yml@master
+    uses: hpde/spase-workflows/.github/workflows/notify-repo-created.yml@master
     secrets: inherit
