@@ -1,5 +1,5 @@
-name: call-reusable-notify
-run-name: ${{ github.actor }} - reusing notify
+name: call-validate-push
+run-name: ${{ github.actor }} - calling centralized validate-push
 on: push
 jobs:
   reusable-notify:
