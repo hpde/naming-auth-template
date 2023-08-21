@@ -1,0 +1,7 @@
+name: call-notify-repo-created
+run-name: ${{ github.actor }} - calling centralized creation notification
+on: create
+jobs:
+  reusable-notify:
+    uses: hpde/test-workflow/.github/workflows/notify-repo-created.yml@master
+    secrets: inherit
