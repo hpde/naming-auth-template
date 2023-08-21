@@ -1,0 +1,13 @@
+name: call-delete-runs
+run-name: ${{ github.actor }} - calling centralized workflow run deletion
+on: 
+  workflow_call:
+    inputs:
+      days:
+        description: 'Number of days.'
+        required: true
+        default: 1
+jobs:
+  reusable-delete-runs:
+    uses: hpde/spase-workflows/.github/workflows/delete-runs.yml@master
+    secrets: inherit
