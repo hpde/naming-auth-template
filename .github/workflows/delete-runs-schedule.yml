@@ -1,9 +1,0 @@
-name: call-delete-runs-schedule
-run-name: ${{ github.actor }} - calling centralized scheduled deletion
-on:
-  schedule:
-    - cron: '0 0 1 * *'
-jobs:
-  reusable-delete-runs-sched:
-    uses: hpde/spase-workflows/.github/workflows/delete-runs-schedule.yml@master
-    secrets: inherit
